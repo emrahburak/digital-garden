@@ -16,36 +16,31 @@ function BaseButton({ children, ...props }: { children: React.ReactNode }) {
 
 function ButtonWithLink({
   children,
-  href,
   ...props
 }: {
   children: React.ReactNode
-  href: string
+  [x: string]: any
 }) {
   return (
     <>
-      <Link href={href}>
-        <p {...props}>{children}</p>
+      <Link href={props.href} {...props}>
+        {children}
       </Link>
     </>
   )
 }
 
 interface Prop {
-  href: string
-  children:React.ReactNode,
-  className?: React.ReactNode
+  children: React.ReactNode
   [x: string]: any
 }
 
-const Button: React.FC<Prop> = ({ children, className, ...props }) => {
+const Button: React.FC<Prop> = ({ children, ...props }) => {
   const Component = props.href ? ButtonWithLink : BaseButton
 
   return (
     <>
-      <div className={cn(styles.button)}>
-        <Component {...props}>{children}</Component>
-      </div>
+      <Component {...props}>{children}</Component>
     </>
   )
 }

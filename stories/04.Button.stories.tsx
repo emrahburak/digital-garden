@@ -1,18 +1,31 @@
-
-import Button from '../components/Button';
+import NavButton from '../components/NavButton';
 import * as Icons from '../components/Icon'
+import TextButton from '../components/Text/TextButton'
+
 
 export default {
-    title: 'MyButton'
+  title: 'Buttons'
 }
 
 
-
-export const Primary = () => (
-    <Button href={""}>
-        <Icons.Home/>
-        Default
-    </Button>
+export const ButtonLightMode  = () => (
+  <NavButton dark={false}  >
+    <Icons.Home />
+    <TextButton>Default</TextButton>
+  </NavButton>
 )
 
 
+export const ButtonDarkMode  = () => (
+  <NavButton dark  >
+    <Icons.Home />
+    <TextButton>Default</TextButton>
+  </NavButton>
+)
+
+export const ButtonAllModeSelected  = () => (
+  <NavButton dark={false} selected  >
+    <Icons.Home />
+    <TextButton>Default</TextButton>
+  </NavButton>
+)

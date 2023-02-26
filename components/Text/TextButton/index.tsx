@@ -8,7 +8,7 @@ function TextButton({
   ...props
 }: {
   children: React.ReactNode
-  className: string | null
+  className?: string | null
 }) {
   return (
     <>

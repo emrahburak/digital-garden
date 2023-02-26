@@ -1,0 +1,52 @@
+.navButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+
+    width: 162px;
+    padding: 10px 8px;
+    text-decoration: none;
+
+}
+
+.navButton:not(.navButtonAllModeSelected):hover {
+    background-color: var(--c-gray-30);
+    color: var(--c-gray-80);
+    box-shadow: 6px 4px 4px var(--c-black-25);
+}
+
+
+.navButtonPrimary {
+    background-color: var(--c-gray-20);
+    color: var(--c-gray-90);
+
+    box-shadow: 4px 0 4px var(--c-black-25);
+}
+
+.navButtonDarkMode {
+    background-color: transparent;
+    border-right: 1px solid var(--c-gray-70);
+    border-bottom: 1px solid var(--c-gray-70);
+    color: var(--c-gray-20);
+    box-shadow: 4px 0 4px var(--c-gray-20-25);
+}
+
+.navButtonDarkMode:hover {
+    background-color: var(--c-gray-dark-hover);
+    box-shadow: 6px 4px 4px var(--c-gray-70-25);
+}
+
+
+
+.navButtonAllModeSelected {
+    background-color: var(--c-gray-80);
+    color: var(--c-gray-20);
+    box-shadow: none;
+}
+
+
+.navButton svg {
+    font-size: 24px;
+}
