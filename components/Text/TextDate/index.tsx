@@ -10,7 +10,7 @@ function TextDate({
   ...props
 }: {
   children: React.ReactNode
-  className: string | null
+  className?: string | null
   small: boolean | null
 }) {
   return (

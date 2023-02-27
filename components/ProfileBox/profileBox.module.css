@@ -1,0 +1,47 @@
+.profileBox{
+    display: flex;
+    flex-direction: column;
+
+    width: 162px;
+
+
+}
+
+
+
+.profileBox button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: var(--c-gray-20);
+    color: var(--c-gray-90);
+    box-shadow: 4px 0 4px var(--c-black-25);
+}
+
+
+
+.profileBox button:nth-child(1){
+    gap: 14px;
+
+    padding: 10px 4px;
+}
+
+.profileBox button a {
+    text-decoration: none;
+}
+
+.profileBox button svg {
+    font-size: 24px;
+}
+
+.profileBox button:nth-child(1) svg:nth-child(1) {
+    font-size: 32px;
+}
+
+
+
+.mail{
+    gap:15px
+}

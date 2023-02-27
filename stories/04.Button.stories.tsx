@@ -1,6 +1,9 @@
 import NavButton from '../components/NavButton';
 import * as Icons from '../components/Icon'
 import TextButton from '../components/Text/TextButton'
+import Nav from '../components/Nav'
+import ProfileBox from '../components/ProfileBox'
+
 
 
 export default {
@@ -8,7 +11,7 @@ export default {
 }
 
 
-export const ButtonLightMode  = () => (
+export const Light  = () => (
   <NavButton dark={false}  >
     <Icons.Home />
     <TextButton>Default</TextButton>
@@ -16,16 +19,23 @@ export const ButtonLightMode  = () => (
 )
 
 
-export const ButtonDarkMode  = () => (
+export const Dark  = () => (
   <NavButton dark  >
     <Icons.Home />
     <TextButton>Default</TextButton>
   </NavButton>
 )
 
-export const ButtonAllModeSelected  = () => (
+export const Selected  = () => (
   <NavButton dark={false} selected  >
     <Icons.Home />
     <TextButton>Default</TextButton>
   </NavButton>
 )
+
+
+export const NavigationDefault = () => <Nav dark={false}/>
+
+export const NavigationDark = () => <Nav dark/>
+
+export const ProfileDefault = () => <ProfileBox dark={false}/>
