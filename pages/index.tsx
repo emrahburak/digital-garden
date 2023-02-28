@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import DisplayImage from '@/components/Picture'
-import Text from '@/components/Text'
+import SocialMediaButton from '@/components/SocialMediaButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <SocialMediaButton/>
       </main>
     </>
   )

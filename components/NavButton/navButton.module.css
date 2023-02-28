@@ -7,7 +7,6 @@
 
     width: 162px;
     padding: 10px 8px;
-    text-decoration: none;
 }
 
 .navButton:not(.navButtonAllModeSelected):hover {

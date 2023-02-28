@@ -4,10 +4,10 @@ import cn from 'classnames'
 
 import styles from './button.module.css'
 
-function BaseButton({ children, ...props }: { children: React.ReactNode }) {
+function BaseButton({ children,className, ...props }: { children: React.ReactNode,className?:string }) {
   return (
     <>
-      <button type="button" {...props}>
+      <button className={cn(styles.baseButton,className)} type="button" {...props}>
         {children}
       </button>
     </>
@@ -16,14 +16,16 @@ function BaseButton({ children, ...props }: { children: React.ReactNode }) {
 
 function ButtonWithLink({
   children,
+  className,
   ...props
 }: {
-  children: React.ReactNode
-  [x: string]: any
+  children: React.ReactNode,
+  className?:string,
+  [x: string]: any,
 }) {
   return (
     <>
-      <Link href={props.href} {...props}>
+      <Link href={props.href} className={cn(styles.buttonWithLink,className)} {...props}>
         {children}
       </Link>
     </>
