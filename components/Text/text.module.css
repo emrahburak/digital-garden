@@ -1,0 +1,79 @@
+.font {
+    font-family: RelewayBold;
+    color: red;
+}
+
+.libre {
+    font-family: LibreBaskerVille;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.sfProBodyRegular{
+    font-family: SFProRegular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1.5%;
+}
+
+
+.sfProCoptionMedium {
+    font-family: SFProMedium;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+
+.sfProCoptionLight {
+    font-family: SFProLight;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.relewayBoldL {
+    font-family: RelewayBold;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.relewayBoldS {
+    font-family: RelewayBold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.relewayRegularL {
+    font-family: RelewayRegular;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.relewayRegularS {
+    font-family: RelewayRegular;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.relewaySemiboldS100 {
+    font-family: RelewaySemiBold;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.relewaySemiboldS150 {
+    font-family: RelewaySemiBold;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+
+.relewayMediumS {
+    font-family: RelewayMedium;
+    font-size: 8px;
+    line-height: 100%;
+    letter-spacing: -2.5%;
+}
+
+
+

@@ -1,0 +1,46 @@
+@font-face{
+  font-family: RelewayRegular;
+  src: url('./fonts/Raleway-Regular.ttf');
+}
+
+@font-face{
+  font-family: RelewayMedium;
+  src: url('./fonts/Raleway-Medium.ttf');
+}
+
+@font-face{
+  font-family: RelewayLight;
+  src: url('./fonts/Raleway-Light.ttf');
+}
+
+@font-face{
+  font-family: RelewaySemiBold;
+  src: url('./fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: RelewayBold;
+  src: url('./fonts/Raleway-Bold.ttf')
+}
+
+@font-face{
+  font-family: LibreBaskerVille;
+  src: url('./fonts/libre-baskerville.regular.ttf')
+}
+
+@font-face{
+  font-family: SFProRegular;
+  src: url('./fonts/SF-Pro.ttf');
+}
+
+@font-face{
+  font-family: SFProLight;
+  src: url('./fonts/SF-Pro-Display-Light.otf') format('opentype');
+}
+
+@font-face{
+  font-family: SFProMedium;
+  src: url('./fonts/SF-Pro-Display-Medium.otf') format('opentype');
+}
+
+

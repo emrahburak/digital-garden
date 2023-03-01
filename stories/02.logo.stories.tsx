@@ -17,7 +17,7 @@ const propsPrimary = {
 export const Primary = () =>  <Picture {...propsPrimary}/>
 Primary.storyName = "Light";
 
-export const Secondary = () => <Picture {...propsPrimary} src={LogoDark} style={{backgroundColor: 'black', borderRadius:'18px 0 0 18px'}}/>
+export const Secondary = () => <Picture {...propsPrimary} src={LogoDark} style={{backgroundColor: 'black', borderRadius:'8px 0 0 8px'}}/>
 Secondary.storyName = "Dark"
 
 
