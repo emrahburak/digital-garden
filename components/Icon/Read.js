@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgRead = (props) => (
   <svg
     width="1em"
@@ -15,5 +15,5 @@ const SvgRead = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgRead;
+)
+export default SvgRead

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgCategories = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgCategories = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgCategories;
+)
+export default SvgCategories

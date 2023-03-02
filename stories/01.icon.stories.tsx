@@ -14,6 +14,7 @@ export const Icons = () => (
     <Icon.BigTreeFill />
     <Icon.Categories />
     <Icon.DownArrowFill />
+    <Icon.UpArrowFill/>
     <Icon.FloverFill />
     <Icon.GithubFill />
     <Icon.GmailFill />

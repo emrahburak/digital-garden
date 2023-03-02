@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgGithubFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgGithubFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgGithubFill;
+)
+export default SvgGithubFill

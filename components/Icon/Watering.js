@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgWatering = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgWatering = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgWatering;
+)
+export default SvgWatering

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgBarrow = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgBarrow = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgBarrow;
+)
+export default SvgBarrow

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgHumanGreetingFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgHumanGreetingFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgHumanGreetingFill;
+)
+export default SvgHumanGreetingFill

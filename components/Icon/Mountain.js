@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgMountain = (props) => (
   <svg
     width="1em"
@@ -23,5 +23,5 @@ const SvgMountain = (props) => (
       strokeLinejoin="round"
     />
   </svg>
-);
-export default SvgMountain;
+)
+export default SvgMountain

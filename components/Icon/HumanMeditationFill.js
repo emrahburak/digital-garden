@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgHumanMeditationFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgHumanMeditationFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgHumanMeditationFill;
+)
+export default SvgHumanMeditationFill

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgSpade = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgSpade = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgSpade;
+)
+export default SvgSpade

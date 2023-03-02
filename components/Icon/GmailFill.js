@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgGmailFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgGmailFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgGmailFill;
+)
+export default SvgGmailFill

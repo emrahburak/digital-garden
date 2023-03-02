@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgLinkedinFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgLinkedinFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgLinkedinFill;
+)
+export default SvgLinkedinFill

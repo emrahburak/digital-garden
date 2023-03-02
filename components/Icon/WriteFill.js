@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgWriteFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgWriteFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgWriteFill;
+)
+export default SvgWriteFill
