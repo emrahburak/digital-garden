@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgPruningSears = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgPruningSears = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgPruningSears;
+)
+export default SvgPruningSears

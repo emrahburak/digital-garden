@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgBigTreeFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgBigTreeFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgBigTreeFill;
+)
+export default SvgBigTreeFill

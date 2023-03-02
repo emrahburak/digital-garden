@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgTwitterFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgTwitterFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgTwitterFill;
+)
+export default SvgTwitterFill

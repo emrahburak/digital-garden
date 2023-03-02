@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgIceIris = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgIceIris = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgIceIris;
+)
+export default SvgIceIris

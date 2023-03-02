@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgHalfMoonFill = (props) => (
   <svg
     width="1em"
@@ -13,5 +13,5 @@ const SvgHalfMoonFill = (props) => (
       fill="currentColor"
     />
   </svg>
-);
-export default SvgHalfMoonFill;
+)
+export default SvgHalfMoonFill

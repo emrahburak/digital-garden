@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgSeeding = (props) => (
   <svg
     width="1em"
@@ -28,5 +28,5 @@ const SvgSeeding = (props) => (
       strokeWidth={2}
     />
   </svg>
-);
-export default SvgSeeding;
+)
+export default SvgSeeding

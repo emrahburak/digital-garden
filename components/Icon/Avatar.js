@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgAvatar = (props) => (
   <svg
     width="1em"
@@ -33,5 +33,5 @@ const SvgAvatar = (props) => (
       />
     </defs>
   </svg>
-);
-export default SvgAvatar;
+)
+export default SvgAvatar

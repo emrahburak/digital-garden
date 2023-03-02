@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 const SvgIrisScan = (props) => (
   <svg
     width="1em"
@@ -23,5 +23,5 @@ const SvgIrisScan = (props) => (
       strokeLinejoin="round"
     />
   </svg>
-);
-export default SvgIrisScan;
+)
+export default SvgIrisScan

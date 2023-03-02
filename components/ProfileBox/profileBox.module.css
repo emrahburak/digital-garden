@@ -1,8 +1,31 @@
 .profileBox{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
 
-    max-width: 162px;
+
+    width: 162px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: var(--c-gray-20);
+
+
+    button{
+        width: 100%;
+        box-shadow: none;
+    }
+
+
+
+
+    .openBox {
+        /* background-color: red; */
+    }
+
+    
+
+
+
 }
-
-
+    

@@ -9,8 +9,8 @@ function TextTitle({
   ...props
 }: {
   children: React.ReactNode
-  small: Boolean | null
-  className: string | null
+  small?: Boolean | null
+  className?: string | null
 }) {
   return (
     <>
