@@ -15,4 +15,4 @@ const props = {
 }
 
 
-export const CardDefault = () => <Card {...props}>Test article test article test article</Card>
+export const CardDefault = () =>  <Card type='big' {...props}>Test article test article test article</Card>

@@ -1,15 +1,18 @@
 import React from 'react'
-import Image from 'next/image'
 import BlogCardImage from '../Picture/BlogCardImage'
 import cn from 'classnames'
 import TextTitle from '../Text/TextTitle'
 import TextTag from '../Text/TextTag'
 import TextDate from '../Text/TextDate'
-import NavButton from '../NavButton'
+import { Read } from '../Icon'
+import Button from '../Button'
 import TextBody from '../Text/TextBody'
+
+import CardBody from './CardBody'
 import styles from './card.module.css'
 
 interface Prop {
+  type: string
   title: string
   path: string
   date: string
@@ -19,7 +22,7 @@ interface Prop {
   [x: string]: any
 }
 
-const BlogCard: React.FC<Prop> = ({
+const BigCardWithImage: React.FC<Prop> = ({
   children,
   title,
   path,
@@ -30,32 +33,25 @@ const BlogCard: React.FC<Prop> = ({
 }) => {
   return (
     <>
-      <div className={styles.blogCard} {...props}>
-        <div className={styles.blogCardImage}>
-          <BlogCardImage src={path} alt={title} />
-        </div>
-        <div className={styles.blogCardSection}>
-          <div className={styles.blogCardHeader}>
-            <TextTitle>{title}</TextTitle>
-            <TextDate small={false}>{date}</TextDate>
-          </div>
-          <TextBody className={styles.blogCardBody}>{children}</TextBody>
-          <div className={styles.blogCardFooter}>
-            <ul>
-              {tags.map((tag, pos) => (
-                <li key={pos}>{tag}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        {children}
+      <div className={styles.bigCard} {...props}>
+        <BlogCardImage src={path} alt={title} />
+        <CardBody tags={tags} {...props}>{children}</CardBody>
       </div>
     </>
   )
 }
 
+const SmallCardWithImage = ({
+  children,
+  ...props
+}: {
+  children: React.ReactNode
+}) => {
+  return <>Small</>
+}
+
 const Card: React.FC<Prop> = ({ ...props }) => {
-  const Component = BlogCard
+  const Component = props.type === 'big' ? BigCardWithImage : SmallCardWithImage
   return (
     <>
       <Component {...props}>{props.children}</Component>

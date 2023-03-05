@@ -8,7 +8,7 @@ function TextBody({
   ...props
 }: {
   children: React.ReactNode
-  className: string | null
+  className?: string  
 }) {
   return (
     <>

@@ -6,12 +6,12 @@ import styles from '../text.module.css'
 function TextDate({
   children,
   className,
-  small = null,
+  small = false,
   ...props
 }: {
   children: React.ReactNode
   className?: string | null
-  small: boolean | null
+  small?: boolean 
 }) {
   return (
     <div
