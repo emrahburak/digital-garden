@@ -9,7 +9,7 @@ interface Prop {
   [x: string]: any
 }
 
-const BlogCardImage: React.FC<Prop> = ({
+const BigCardImage: React.FC<Prop> = ({
   src,
   alt,
   ...props
@@ -28,4 +28,4 @@ const BlogCardImage: React.FC<Prop> = ({
   )
 }
 
-export default BlogCardImage
+export default BigCardImage
