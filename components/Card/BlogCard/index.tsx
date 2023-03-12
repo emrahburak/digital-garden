@@ -3,7 +3,7 @@ import * as Text from '../../Text'
 import Button from '../../Button'
 import { Read as IconRead } from '../../Icon'
 
-import styles from './bigCard.module.css'
+import styles from './blogCard.module.css';
 import Picture from '../../Picture'
 
 interface Prop {
@@ -15,7 +15,7 @@ interface Prop {
   [x: string]: any
 }
 
-const BigCard: React.FC<Prop> = ({
+const BlogCard: React.FC<Prop> = ({
   children,
   title,
   path,
@@ -26,18 +26,18 @@ const BigCard: React.FC<Prop> = ({
 }) => {
   return (
     <>
-      <div className={styles.bigCard} {...props}>
-        <Picture src={path} size={size} alt={title} />
+      <div className={styles.container} {...props}>
+        <Picture className={styles.image} src={path} size={size} alt={title} />
 
-        <div className={styles.bigCardBody}>
-          <div className={styles.bigCardHeader}>
+        <div className={styles.body}>
+          <div className={styles.header}>
             <Text.TextTitle>{title}</Text.TextTitle>
             <Text.TextDate>{date}</Text.TextDate>
           </div>
-          <Text.TextBody className={styles.blogCardBody}>
+          <Text.TextBody className={styles.article}>
             {children}
           </Text.TextBody>
-          <div className={styles.bigCardFooter}>
+          <div className={styles.footer}>
             <ul>
               {tags.map((tag, pos) => (
                 <Text.TextTag key={pos}> {tag}</Text.TextTag>
@@ -53,4 +53,4 @@ const BigCard: React.FC<Prop> = ({
   )
 }
 
-export default BigCard
+export default BlogCard

@@ -16,7 +16,7 @@ function TextTag({
   return (
     <div
       className={cn([
-        !small ? styles.relewayBoldS : styles.relewayMediumS,
+        !small ? styles.relewayBoldS : styles.sfProCoptionMedium,
         className
       ])}
       {...props}

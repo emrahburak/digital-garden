@@ -1,9 +1,11 @@
-import * as Card from '../components/Card'
+import * as Card from 'components/Card'
 import BlogCardImage from '../static/image_bc.png'
+
 
 export default {
   title: 'Card'
 }
+
 
 const props = {
   title: 'Blog Title',
@@ -14,10 +16,14 @@ const props = {
 }
 
 
-export const BigCard = () =>  <Card.BigCard {...props}>Test article test article test article</Card.BigCard>
+export const BlogCard = () =>  <Card.BlogCard {...props}>Test article test article test article</Card.BlogCard>
 
-export const MiddleCard = () => <Card.MiddleCard {...props}>Middle Card  cart </Card.MiddleCard>
+export const GardenCardBig = () => <Card.GardenCard.Big {...props}/>
 
-export const SmallCard = () => <Card.SmallCard {...props}>Small Card article</Card.SmallCard>
+export const GardenCardMiddle = () => <Card.GardenCard.Middle {...props}>Garden Card Middle </Card.GardenCard.Middle>
 
-export const TinyCard = () => <Card.TinyCard {...props}>Tiny Card article</Card.TinyCard>
+export const GardenCardSmall = () => <Card.GardenCard.Small {...props}>Garden Card Small </Card.GardenCard.Small>
+
+export const GardenCardInner = () => <Card.GardenCard.Inner {...props}>Garden Card Inner</Card.GardenCard.Inner>
+
+export const PortfolioCard = () => <Card.PortfolioCard {...props}>Tiny Card article</Card.PortfolioCard>

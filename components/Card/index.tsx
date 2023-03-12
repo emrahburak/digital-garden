@@ -1,7 +1,6 @@
 
-import BigCard from './BigCard'
-import MiddleCard from './MiddleCard';
-import SmallCard from './SmallCard'
-import TinyCard from './TinyCard';
+import BlogCard from './BlogCard'
+import PortfolioCard from './PortfolioCard'
+import * as GardenCard from './GardenCard';
 
-export {BigCard, MiddleCard ,SmallCard, TinyCard} 
+export {BlogCard ,PortfolioCard, GardenCard} 

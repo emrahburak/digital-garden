@@ -14,7 +14,7 @@ function TextDate({
   small?: boolean 
 }) {
   return (
-    <div
+    <p
       className={cn([
         !small ? styles.sfProBodyRegular : styles.relewayMediumS,
         className
@@ -22,7 +22,7 @@ function TextDate({
       {...props}
     >
       {children}
-    </div>
+    </p>
   )
 }
 

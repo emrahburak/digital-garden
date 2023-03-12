@@ -1,7 +1,8 @@
 import React from 'react'
 import cn from 'classnames'
 
-import styles from './tinyCard.module.css';
+import styles from './small.module.css';
+
 
 interface Prop {
   title: string
@@ -12,7 +13,7 @@ interface Prop {
   [x: string]: any
 }
 
-const TinyCard: React.FC<Prop> = ({
+const Small: React.FC<Prop> = ({
   children,
   title,
   date,
@@ -23,11 +24,11 @@ const TinyCard: React.FC<Prop> = ({
    (
     <>
       <div className={cn(styles.smallCard,props.className)}>
-        Middle Card
+        Garden Card
         {children}
       </div>
     </>
   )
 
 
-export default TinyCard;
+export default Small

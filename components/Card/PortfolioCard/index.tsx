@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'classnames';
-import styles from './smallCard.module.css';
+import styles from './portfolioCard.module.css';
 
 interface Prop {
   title: string
@@ -11,7 +11,7 @@ interface Prop {
   [x: string]: any
 }
 
-const SmallCard: React.FC<Prop> = ({
+const PortfolioCard: React.FC<Prop> = ({
   children,
   title,
   date,
@@ -21,11 +21,11 @@ const SmallCard: React.FC<Prop> = ({
    (
     <>
       <div className={cn(styles.smallCard,props.className)}>
-        Middle Card
+         PortfolioCard
         {children}
       </div>
     </>
   )
 
 
-export default SmallCard;
+export default PortfolioCard;
