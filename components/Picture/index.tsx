@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import cn from "classnames";
 import DefaultImage from "../../public/profile.jpg";
-import { DefaultDeserializer } from "v8";
 
 interface Prop {
   size: { width: number; height: number };

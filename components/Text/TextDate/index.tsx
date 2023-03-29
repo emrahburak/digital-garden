@@ -6,15 +6,15 @@ import styles from '../text.module.css'
 function TextDate({
   children,
   className,
-  small = null,
+  small = false,
   ...props
 }: {
   children: React.ReactNode
   className?: string | null
-  small: boolean | null
+  small?: boolean 
 }) {
   return (
-    <div
+    <p
       className={cn([
         !small ? styles.sfProBodyRegular : styles.relewayMediumS,
         className
@@ -22,7 +22,7 @@ function TextDate({
       {...props}
     >
       {children}
-    </div>
+    </p>
   )
 }
 

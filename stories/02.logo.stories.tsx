@@ -2,7 +2,7 @@ import Picture from "../components/Picture";
 import LogoDark from "../public/logo-dark.png";
 import LogoLight from "../public/logo.png";
 
-import BlogCardImage from '../components/Picture/BlogCardImage'
+import BlogCardImage from '../components/Picture/BigCardIamge'
 import imageBC from '../static/image_bc.png';
 
 
