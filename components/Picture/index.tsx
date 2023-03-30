@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import cn from "classnames";
-import DefaultImage from "../../public/profile.jpg";
 
 interface Prop {
   size: { width: number; height: number };
@@ -19,7 +18,7 @@ const Picture: React.FC<Prop> = ({
     <>
       <Image
         className={cn(props.style, className)}
-        src={src ? `/${src}` : `/${DefaultImage}`}
+        src={src}
         width={size.width}
         height={size.height}
         alt={alt}

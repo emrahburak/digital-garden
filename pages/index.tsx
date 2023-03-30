@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
-import Image from 'next/image'
-import Link from 'next/link'
+import * as Text from '@/components/Text'
+import Button from '@/components/Button'
 
 import { Inter } from '@next/font/google'
 
@@ -14,12 +14,14 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p>[Your Self Introduction]</p>
-        <p>
+        <Text.TextBody>Merhaba ben Emrah</Text.TextBody>
+        <Text.TextBody>
           (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        </Text.TextBody>
       </section>
+      <Button href={'https://nextjs.org/learn'}>
+        <Text.TextButton>our Next.js tutorial</Text.TextButton>
+      </Button>
     </Layout>
   )
 }

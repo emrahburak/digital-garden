@@ -2,7 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
+import getConfig from 'next/config'
+
+import * as Text from '@/components/Text'
+import Button from '@/components/Button'
+import Picture from '@/components/Picture'
+
+// import ProfilePıc from '../../public/images/profile.jpg'
+import ProfilePıc from '@/images/profile.jpg'
+
+
+
 import styles from './layout.module.css'
+
+const {publicRuntimeConfig } = getConfig();
 
 const name = 'emrahburak'
 export const siteTitle = 'Next.js sample digital garden'
@@ -36,34 +49,39 @@ function Layout({
           <>
             <Image
               priority
-              src="/profile.jpg"
+              src ={ProfilePıc}
+              // src={`${publicRuntimeConfig.staticFolder}/${LogoLight}`}
               height={144}
               width={144}
               alt=""
             />
-            <h1>{name}</h1>
+
+            <Text.TextTitle>{name}</Text.TextTitle>
           </>
         ) : (
           <>
             <Link href="/">
-              <Image
+              <Picture
                 priority
-                src="/profile.jpg"
-                height={108}
-                width={108}
-                alt=""
+                src={ProfilePıc}
+                size={{ width: 108, height: 108 }}
+                alt={''}
               />
             </Link>
-            <h2>
-              <Link href="/">{name}</Link>
-            </h2>
+            <Button href="/">
+              <Text.TextButton>{name}</Text.TextButton>
+            </Button>
+            {/* <Link href="/">{name}</Link> */}
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
         <div>
-          <Link href="/">Back to Home</Link>
+          <Button href="/">
+            <Text.TextButton>Back to home</Text.TextButton>
+          </Button>
+          {/* <Link href="/">Back to Home</Link> */}
         </div>
       )}
     </div>
