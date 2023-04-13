@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import {GetStaticProps,InferGetStaticPropsType} from 'next'
+import Link from 'next/link'
+
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Layout, { siteTitle } from '../components/Layout'
 import DateFormat from '@/components/DateFormat'
 import * as Text from '@/components/Text'
@@ -9,7 +11,7 @@ import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({allPostData}:InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({ allPostData }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout home>
       <Head>
@@ -29,11 +31,14 @@ export default function Home({allPostData}:InferGetStaticPropsType<typeof getSta
           Blog
         </Text.TextTitle>
         <ul>
-          {allPostData.map(({id,date,title}:{id:string, date:string, title:string}) => (
+          {allPostData.map(({ id, date, title }: { id: string, date: string, title: string }) => (
             <li key={id}>
-              <Text.TextTitle>{title}</Text.TextTitle>
-              <Text.TextTitle>{id}</Text.TextTitle>
-              <DateFormat dateString={date}/>
+              <Button href={`/posts/${id}`}>
+                <Text.TextTitle>{title}</Text.TextTitle>
+              </Button>
+              <small>
+                <DateFormat dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
@@ -43,9 +48,9 @@ export default function Home({allPostData}:InferGetStaticPropsType<typeof getSta
 }
 
 
-import {getSortedPostsData} from '@/lib/post'
+import { getSortedPostsData } from '@/lib/post'
 
-export const  getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const allPostData = await getSortedPostsData();
   return {
     props: {

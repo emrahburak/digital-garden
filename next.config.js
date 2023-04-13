@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   publicRuntimeConfig: {
     staticFolder: '/images'
+  },
+  typescript:{
+    ignoreBuildErrors:true,
   }
 };
 

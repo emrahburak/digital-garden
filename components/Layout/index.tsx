@@ -24,8 +24,8 @@ function Layout({
   children,
   home
 }: {
-  children: React.ReactNode
-  home: Boolean
+  children?: React.ReactNode
+  home?: Boolean
 }) {
   return (
     <div className={styles.container}>
